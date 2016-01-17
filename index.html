@@ -1,20 +1,89 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
-  <meta name="description" content="">
-  <link rel="stylesheet" href="dist/styles/screen.min.css">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<meta name="description" content="">
+	<link href='https://fonts.googleapis.com/css?family=Playfair+Display|Open+Sans:400,600' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="dist/styles/screen.min.css">
 </head>
-<body>
+<body class="landing">
 	<div class="masthead">
-		<div class="container">
+	<div class="icon">
+		<img src="dist/img/chevron-down.svg" onerror="this.src='dist/img/chevron-down.png'; this.onerror=null;">
+	</div>
+	<div class="overlay"></div>
+		<div class="container masthead-content">
 			<h1>Lunch Planner</h1>
-			<h2>Making Lunch Better</h2>
 		</div>
 	</div>
-  <script src="dist/scripts/main.min.js"></script>
+	<div class="container">
+		<h2>Lunch Planning Made Easy</h2>
+		<p>Are you indecisive about what to pack for lunch every day? Just enter what ingredients you would like to use, how many calories per meal, and if you have any allergies, and Lunch Planner will take the stress out of meal prep for you!</p>
+
+		<form class="lunch-form" action="submit">
+			<div class="form-option">
+				<img class="icon" src="dist/img/icon-ingredient.svg" onerror="this.src='dist/img/icon-ingredient.png'; this.onerror=null;">
+				<div class="form-option-input">
+					<label for="ingredient">Ingredient</label>
+					<input type="text" name="ingredient" id="ingredient">
+				</div>
+			</div>
+			<div class="form-option">
+				<img class="icon" src="dist/img/icon-calories.svg" onerror="this.src='dist/img/icon-calories.png'; this.onerror=null;">
+				<div class="form-option-input">
+					<label for="calories">Max Calories</label>
+					<input type="text" name="calories" id="calories">
+				</div>
+			</div>
+			<div class="form-option">
+				<img class="icon" src="dist/img/icon-allergies.svg" onerror="this.src='dist/img/icon-allergies.png'; this.onerror=null;">
+				<p class="style-label form-option-input">Allergy Considerations</p>
+			</div>
+			<div class="allergies">
+				<div class="allergy-option">
+					<input type="checkbox" name="dairy" id="dairy">
+					<label for="dairy">Dairy</label>
+				</div>
+
+				<div class="allergy-option">
+					<input type="checkbox" name="peanut" id="peanut">
+					<label for="peanut">peanut</label>
+				</div>
+
+				<div class="allergy-option">
+					<input type="checkbox" name="gluten" id="gluten">
+					<label for="gluten">gluten</label>
+				</div>
+				<div class="allergy-option">
+					<input type="checkbox" name="wheat" id="wheat">
+					<label for="wheat">wheat</label>
+				</div>
+
+				<div class="allergy-option">
+					<input type="checkbox" name="egg" id="egg">
+					<label for="egg">egg</label>
+				</div>
+
+				<div class="allergy-option">
+					<input type="checkbox" name="seafood" id="seafood">
+					<label for="seafood">seafood</label>
+				</div>
+			</div>
+
+			<button type="submit">Submit</button>
+		</form>
+	</div>
+
+	<footer>
+		<div class="container">
+			<p>Made with 
+			<img class="icon" src="dist/img/heart.svg" onerror="this.src='dist/img/heart.png'; this.onerror=null;"> 
+			By Laura Naccarato</p>
+		</div>
+	</footer>
+	<script src="dist/scripts/main.min.js"></script>
 </body>
 </html>

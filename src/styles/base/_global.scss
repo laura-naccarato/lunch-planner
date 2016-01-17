@@ -1,4 +1,8 @@
 // Global CSS goes here
 
-@import 'variables';
-@import 'structure';
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}

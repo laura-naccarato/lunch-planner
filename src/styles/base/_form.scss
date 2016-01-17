@@ -1,0 +1,94 @@
+label,
+input[type=text],
+.style-label {
+	display: block;
+	border-radius: 4px;
+	font-weight: 600;
+	font-size: $font-size-small;
+}
+
+label,
+.style-label {
+	margin: 0;
+	margin-top: $size-medium;
+}
+
+input[type=text] {
+	height: $size-xlarge;
+}
+
+button[type=submit] {
+	background: $color-white;
+	padding: $size-small/2 $size-large;
+	border-radius: 6px;
+	border: 1px solid black;
+
+	&:hover {
+		background: darken($color-white, 10%);
+	}
+}
+
+.lunch-form {
+	@include clearfix();
+	width: 50%;
+	margin: 0 auto;
+
+	input[type=text] {
+		margin-bottom: $size-medium;
+	}
+
+	p {
+		line-height: 50px;
+	}
+
+	button {
+		float: right;
+		margin-top: $size-medium;
+	}
+
+	.allergies {
+		font-size: 0;
+		padding-left: 50px + $size-small;
+
+		.allergy-option {
+			font-size: 16px;
+			width: 50%;
+			display: inline-block;
+
+			input[type=checkbox],
+			label {
+				display: inline-block;
+
+			}
+
+			label {
+				margin: 0 0 $size-small $size-small;
+			}
+		}
+	}
+
+	.icon {
+		width: 25%;
+		display: inline-block;
+		padding-right: $size-small;
+		max-width: 60px;
+		line-height: $size-xlarge;
+		vertical-align: middle;
+	}
+
+	.form-option {
+		.icon,
+		.form-option-input {
+			font-size: 12px;
+			display: inline-block;
+		}
+
+		.form-option-input {
+			width: 75%;
+
+			input[type=text] {
+				width: 100%;
+			}
+		}
+	}
+}

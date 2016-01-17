@@ -1,8 +1,14 @@
+
 .container {
-	width: $size-container-width;
+	max-width: $size-container-width;
 	margin: 0 auto;
+	padding: $size-large;
 }
 
-	.masthead {
-		background: url('/img/masthead.jpeg');
+footer .container {
+	border-top: 1px solid black;
+	padding: 0;
+	p {
+		marin: 0;
+	}
 }
